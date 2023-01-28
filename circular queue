@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <conio.h>
 #define SIZE 5
 
 int items[SIZE];
@@ -86,6 +86,6 @@ int main() {
 
 
   enQueue(8);
-
+  getch();
   return 0;
 }
