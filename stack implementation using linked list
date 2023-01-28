@@ -1,24 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Structure to create a node with data and the next pointer
+
 struct Node {
     int data;
     struct Node *next;
 };
 Node* top = NULL;
 
-// Push() operation on a  stack
+// Push() operation 
 void push(int value) {
     struct Node *newNode;
     newNode = (struct Node *)malloc(sizeof(struct Node));
-    newNode->data = value; // assign value to the node
+    newNode->data = value; 
     if (top == NULL) {
         newNode->next = NULL;
     } else {
         newNode->next = top; // Make the node as top
     }
-    top = newNode; // top always points to the newly created node
+    top = newNode; 
     printf("Node is Inserted\n\n");
 }
 
@@ -35,7 +35,7 @@ int pop() {
 }
 
 void display() {
-    // Display the elements of the stack
+    // Display the elements 
     if (top == NULL) {
         printf("\nStack Underflow\n");
     } else {
